@@ -155,7 +155,7 @@ if __name__ == '__main__':
             homeWin.setProperty(("notifier.enable%i" % i), ("%s" % ENABLE))
             if ENABLE == "false":
                 # homeWin.setProperty( ("notifier.enable%i" % i) , ("false"))
-                xbmc.log(("[%s] : Enableserver = %s, i = %d  " % (scriptname, Addon.getSetting('enableserver%i' % i), i),DEBUG_LOG))
+                xbmc.log(("[%s] : Enableserver = %s, i = %d  " % (scriptname, Addon.getSetting('enableserver%i' % i), i)),DEBUG_LOG)
                 # If server not defined continue with the next
                 continue
             USER     = Addon.getSetting('user%i'   % i)
